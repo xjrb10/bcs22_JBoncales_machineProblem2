@@ -58,5 +58,6 @@ export async function getMyOrders(user_id) {
 }
 
 export async function setAdmin(user_id, admin_status = true) {
-    return User.findByIdAndUpdate(user_id, {isAdmin: admin_status});
+    await User.findByIdAndUpdate(user_id, {isAdmin: admin_status});
+    return User.findById(user_id);
 }

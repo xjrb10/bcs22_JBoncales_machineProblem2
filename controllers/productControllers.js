@@ -21,9 +21,11 @@ export async function getProduct(id) {
 }
 
 export async function updateProduct(id, newDetails) {
-    return Product.findByIdAndUpdate(id, newDetails);
+    await Product.findByIdAndUpdate(id, newDetails);
+    return Product.findById(id);
 }
 
 export async function archiveProduct(id) {
-    return Product.findByIdAndUpdate(id, {isActive: false});
+    await Product.findByIdAndUpdate(id, {isActive: false});
+    return Product.findById(id);
 }
