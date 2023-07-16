@@ -22,8 +22,8 @@ export async function loginUser(body) {
     } : {error: "Invalid password"};
 }
 
-export async function getProfile(body) {
-    const result = await User.findById(body.id);
+export async function getProfile(id) {
+    const result = await User.findById(id);
     if (!result) return {error: "Not found"};
     result.password = "";
 

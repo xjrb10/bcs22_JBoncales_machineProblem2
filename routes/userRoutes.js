@@ -19,8 +19,8 @@ router.post('/register', async (req, res) => {
 router.post('/login', async (req, res) => {
 	res.json(await loginUser(req.body))
 });
-router.post('/details', async (req, res) => {
-	res.json(await getProfile(req.body))
+router.post('/:id/details', async (req, res) => {
+	res.json(await getProfile(req.params.id))
 });
 
 
