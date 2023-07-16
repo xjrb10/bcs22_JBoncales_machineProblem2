@@ -1,8 +1,9 @@
 // ITCS227 source code Template for 2T AY 2022-2023
 /*
 	Program:	Computation of Grades using Function
-	Programmer:	Juan Dela Cruz
-	Section:	BCS22
+	Programmer:	BONCALES, Joen Ralph S.
+                MANGALI, Rina Ellaine V.
+	Section:	AN22
 	Start Date:	July 15, 2023
 	End Date:	July 17, 2023
 */
